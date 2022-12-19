@@ -10,10 +10,12 @@
     --azul-darker: #0D022E;
 }
 
+/* GLOBAL */
 * {
     font-family: var(--fonte-nunito);
 }
 
+/* MAIN */
 main {
     background-image: url('../images/banner3.PNG');
     background-size: cover;
@@ -24,6 +26,14 @@ main {
     justify-content: center;
 }
 
+/* TITULOS de LOGIN/CADASTRAR */
+.titulo-form {
+    font-size: 1.8em;
+    font-weight: 900;
+    letter-spacing: .1em;
+}
+
+/* LOGIN AREA */
 #login-section {
     display: flex;
     align-items: center;
@@ -37,12 +47,6 @@ main {
     transition-timing-function: ease;
 }
 
-.titulo-form {
-    font-size: 1.8em;
-    font-weight: 900;
-    letter-spacing: .1em;
-}
-
 #login-form {
     display: flex;
     flex-direction: column;
@@ -52,6 +56,28 @@ main {
     width: 100%;
 }
 
+#login-section>#login-form>#buttonLogin {
+    background-color: var(--azul-light);
+    height: 42px;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+#login-section>#login-form>#buttonLogin:hover {
+    background-color: rgb(33, 91, 143);
+}
+
+#login-section>#login-form>#buttonPassRecovery {
+    background-color: #5f2da5;
+    height: 42px;
+    width: 100%;
+}
+
+#login-section>#login-form>#buttonPassRecovery:hover {
+    background-color: #3f1a70;
+}
+
+/* FORM ELEMENTS/INPUTS P/ AMBAS ÁREAS */
 .form--button {
     color: var(--branco);
     box-shadow: 0px 6px 8px -2px rgb(0 0 0 / 40%);
@@ -126,6 +152,7 @@ small {
     color: #b42015;
 }
 
+/* ERROR/SUCCESS CLASSES */
 .form--control.success input, .password--input.success :where(input, button) {
     border: 3px solid #00b521;
 }
@@ -138,27 +165,7 @@ small {
     visibility: visible;
 }
 
-#login-section>#login-form>#buttonLogin {
-    background-color: var(--azul-light);
-    height: 42px;
-    width: 100%;
-    margin-bottom: 1rem;
-}
-
-#login-section>#login-form>#buttonLogin:hover {
-    background-color: rgb(33, 91, 143);
-}
-
-#login-section>#login-form>#buttonPassRecovery {
-    background-color: #5f2da5;
-    height: 42px;
-    width: 100%;
-}
-
-#login-section>#login-form>#buttonPassRecovery:hover {
-    background-color: #3f1a70;
-}
-
+/* CAD BUTTON */
 #cadbtn-section {
     margin-top: 3rem;
 }
@@ -179,6 +186,7 @@ small {
     background-color: rgb(21, 38, 120);
 }
 
+/* REGISTER AREA */
 #registro-section {
     display: none;
     height: 550px;
@@ -196,7 +204,7 @@ small {
     margin-bottom: .5rem;
 }
 
-#backBtn1 {
+#backBtn {
     border: none;
     font-size: 1.5em;
     margin-left: 0;
@@ -204,7 +212,7 @@ small {
     color: rgb(8, 80, 144);
 }
 
-#backBtn1:hover {
+#backBtn:hover {
     color: var(--azul-dark);
 }
 
@@ -227,6 +235,7 @@ small {
     background-color: rgb(33, 91, 143);
 }
 
+/* ALERTA: USER CADASTRADO */
 #cadastro-sucesso {
     display: none;
     gap: 1.5rem;

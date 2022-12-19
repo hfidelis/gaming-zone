@@ -9,6 +9,7 @@
     --azul-darker: #0D022E;
 }
 
+/* GLOBAL */
 * {
     margin: 0;
     padding: 0;
@@ -30,6 +31,7 @@ main {
     transition-timing-function: ea;
 }
 
+/* NAV */
 nav {
     width: 100vw;
     height: 56px;
@@ -39,6 +41,7 @@ nav {
     transition-timing-function: ease;
 }
 
+/* FOOTER */
 footer {
     display: flex;
     flex-direction: column;
