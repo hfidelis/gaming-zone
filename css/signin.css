@@ -1,0 +1,271 @@
+@charset 'UTF-8';
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@700;900&display=swap');
+
+:root {
+    --fonte-nunito: 'Nunito Sans', sans-serif;
+    --branco: rgba(255, 255, 255, 0.98);
+    --azul-light: rgb(34, 130, 255);
+    --azul-medium: rgb(31, 119, 196);
+    --azul-dark: #003260;
+    --azul-darker: #0D022E;
+}
+
+* {
+    font-family: var(--fonte-nunito);
+}
+
+main {
+    background-image: url('../images/banner3.PNG');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#login-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    width: 260px;
+    background-color: var(--branco);
+    box-shadow: 0px 5px 20px 8px rgb(0 0 0 / 50%);
+    border-radius: 20px;
+    transition: width .3s, height .3s;
+    transition-timing-function: ease;
+}
+
+.titulo-form {
+    font-size: 1.8em;
+    font-weight: 900;
+    letter-spacing: .1em;
+}
+
+#login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    height: 100%;
+    width: 100%;
+}
+
+.form--button {
+    color: var(--branco);
+    box-shadow: 0px 6px 8px -2px rgb(0 0 0 / 40%);
+    border-radius: 15px;
+    transition: .3s;
+    border: none;
+    padding: 5px;
+}
+
+.form--input {
+    background-color: var(--azul-dark);
+    color: var(--branco);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    border: none;
+    padding-left: 10px;
+    border-radius: 15px;
+    caret-color: var(--branco);
+    box-shadow: 0px 6px 8px -2px rgb(0 0 0 / 40%);
+    height: 42px;
+}
+
+.form--input::placeholder {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(255, 255, 255, 20%);
+    font-style: italic;
+    font-weight: 500;
+    padding-left: 3px;
+}
+
+.password-area {
+    border-radius: 15px 0 0 15px;
+    width: 160px;
+    transition: width .3s;
+    transition-timing-function: ease;
+}
+
+.showBtn {
+    height: 42px;
+    width: 35px;
+    padding: 5px;
+    color: var(--branco);
+    background-color: var(--azul-dark);
+    border: none;
+    border-radius: 0 15px 15px 0;
+}
+
+.form--label {
+    font-size: 1em;
+}
+
+.form--control {
+    display: grid;
+    gap: .2rem;
+    margin-bottom: .5rem;
+    width: 100%;
+}
+
+.form--control small, .password--input small {
+    visibility: hidden;
+}
+
+small {
+    margin-bottom: .1rem;
+    margin-left: .2rem;
+    font-family: var(--fonte-logo);
+    font-weight: 600;
+    font-size: .8em;
+    color: #b42015;
+}
+
+.form--control.success input, .password--input.success :where(input, button) {
+    border: 3px solid #00b521;
+}
+
+.form--control.error input, .password--input.error :where(input, button) {
+    border: 3px solid #8F0A00;
+}
+
+.form--control.error small, .password--input.error small {
+    visibility: visible;
+}
+
+#login-section>#login-form>#buttonLogin {
+    background-color: var(--azul-light);
+    height: 42px;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+#login-section>#login-form>#buttonLogin:hover {
+    background-color: rgb(33, 91, 143);
+}
+
+#login-section>#login-form>#buttonPassRecovery {
+    background-color: #5f2da5;
+    height: 42px;
+    width: 100%;
+}
+
+#login-section>#login-form>#buttonPassRecovery:hover {
+    background-color: #3f1a70;
+}
+
+#cadbtn-section {
+    margin-top: 3rem;
+}
+
+#cadBtn {
+    border: none;
+    border-radius: 15px;
+    color: var(--branco);
+    background-color: rgb(25, 50, 173);
+    transition: .3s;
+    box-shadow: 0px 0px 24px 24px rgb(0 0 0 / 70%);
+    height: 60px;
+    width: 200px;
+    padding: 5px;
+}
+
+#cadBtn:hover {
+    background-color: rgb(21, 38, 120);
+}
+
+#registro-section {
+    display: none;
+    height: 550px;
+    width: 260px;
+    background-color: var(--branco);
+    box-shadow: 0px 5px 20px 8px rgb(0 0 0 / 50%);
+    border-radius: 20px;
+    transition: width .3s, height .3s;
+    transition-timing-function: ease;
+}
+
+#cadTitle {
+    display: flex;
+    gap: .2rem;
+    margin-bottom: .5rem;
+}
+
+#backBtn1 {
+    border: none;
+    font-size: 1.5em;
+    margin-left: 0;
+    width: 30px;
+    color: rgb(8, 80, 144);
+}
+
+#backBtn1:hover {
+    color: var(--azul-dark);
+}
+
+#registro-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    height: 100%;
+    width: 100%;
+}
+
+#registro-section>#registro-form>#regButton {
+    background-color: var(--azul-medium);
+    height: 50px;
+    width: 100%;
+}
+
+#registro-section>#registro-form>#regButton:hover {
+    background-color: rgb(33, 91, 143);
+}
+
+#cadastro-sucesso {
+    display: none;
+    gap: 1.5rem;
+    background-color: var(--branco);
+    border-radius: 30px;
+    padding: 10px;
+    width: 250px;
+    height: 300px;
+}
+
+#cadastro-sucesso.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#cadastro-sucesso>span {
+    font-size: 2.5em;
+    color: rgb(94, 0, 137);
+}
+
+#cadastro-sucesso>p {
+    font-size: 1.3em;
+    font-weight: 600;
+    text-align: center;
+    font-family: var(--fonte-logo);
+}
+
+#cadastro-sucesso>button {
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 30px;
+    background-color: var(--azul-medium);
+    color: var(--branco);
+    font-weight: 600;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    transition: .2s;
+}
+
+#cadastro-sucesso>button:hover {
+    background-color: rgb(25, 107, 179);
+}

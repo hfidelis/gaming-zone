@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/signin.css">
+    <link rel="stylesheet" href="../css/global-media-query.css">
+    <link rel="stylesheet" href="../css/signin-media-query.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <nav>
+
+    </nav>
+
+    <main>
+
+        <section id="login-section">
+            <form action="#" id="login-form">
+                <h1 class="titulo-form">Login</h1>
+                <div class="form--control">
+                    <div class="label-div">
+                        <span class="bi bi-person-fill"></span>
+                        <label for="iusuario" class="form--label">Usuário</label>
+                    </div>
+                    <input type="text" class="form--input" name="user-area" id="user-area" autocomplete="username" placeholder="Usuário">
+                    <small>Error message</small>
+                </div>
+                <div class="form--control">
+                    <div class="label-div">
+                        <span class="bi bi-key-fill"></span>
+                        <label for="isenha" class="form--label">Senha</label>
+                    </div>
+                    <div class="password--input">
+                        <input type="password" class="form--input password-area" name="password-area" id="password-area"  autocomplete="current-password" placeholder="Senha">
+                        <button class="showBtn bi bi-eye-fill" id="showBtn1" onclick="toggleLoginPass()" type="button"></button>
+                    </div>
+                    <small>Error message</small>
+                </div>
+                <button type="button" class="form--button" id="buttonLogin">Entrar</button>
+                <button type="button" class="form--button" id="buttonPassRecovery">Esqueceu sua senha?</button>
+            </form>
+        </section>
+
+        <div id="cadbtn-section">
+            <button type="button" id="cadBtn">Não tem uma conta? Cadastre-se</button>
+        </div>
+
+        <section id="registro-section">
+
+            <form action="#" id="registro-form">
+
+                <div id="cadTitle">
+                    <a href="signin.html" target="_self" id="backBtn1" class="bi bi-arrow-left-circle-fill"></a>
+                    <h1 class="titulo-form">Cadastrar</h1>
+                </div>
+
+                <div class="form--control">
+                    <div class="label-div">
+                        <i class="bi bi-envelope-fill"></i>
+                        <label for="iemail" class="form--label">E-mail</label>
+                    </div>
+                    <input type="text" placeholder="seu@email.com" class="form--input" autocomplete="email" name="email-area" id="email-area">
+                    <small>Error message</small>
+                </div>
+
+                <div class="form--control">
+                    <div class="label-div">
+                        <span class="bi bi-person-fill"></span>
+                        <label for="rusuario" class="form--label">Usuário</label>
+                    </div>
+                    <input type="text" placeholder="Usuário" class="form--input" name="ruser-area" id="ruser-area">
+                    <small>Error message</small>
+                </div>
+
+                <div class="form--control">
+                    <div class="label-div">
+                        <span class="bi bi-key-fill"></span>
+                        <label for="rsenha" class="form--label">Senha</label>
+                    </div>
+                    <div class="password--input">
+                        <input type="password" placeholder="Senha" autocomplete="new-password" class="form--input password-area" name="rpass-area" id="rpass-area">
+                        <button class="showBtn bi bi-eye-fill" id="showBtn2" onclick="toggleRegPass()" type="button"></button>
+                        <small>Error message</small>
+                    </div>
+                </div>
+
+                <div class="form--control">
+                    <div class="label-div">
+                        <span class="bi bi-key-fill"></span>
+                        <label for="confsenha" class="form--label">Confirme sua senha</label>
+                    </div>
+                    <div class="password--input">
+                        <input type="password" placeholder="Confirme sua senha" autocapitalize="new-password" class="form--input password-area" name="confpass-area" id="confpass-area">
+                        <button class="showBtn bi bi-eye-fill" id="showBtn3" onclick="toggleConfPass()" type="button"></button>
+                        <small>Error message</small>
+                    </div>
+                </div>
+
+                <button type="submit" class="form--button" id="regButton">Cadastrar</button>
+
+            </form>
+
+        </section>
+
+        <div id="cadastro-sucesso" role="alert">
+            <span class="bi bi-check-circle-fill"></span>
+            <p>Cadastro realizado! volte para entrar na sua conta.</p>
+            <button id="back-button" onclick="backHome()">Voltar</button>
+        </div>
+
+    </main>
+
+    <footer>
+        <section>
+            <div class="footer--div">
+                <div class="footer--link">
+                    <span class="bi bi-instagram footer--icon"></span><a href="#">@gamezone1</a>
+                </div>
+                <div class="footer--link">
+                    <span class="bi bi-whatsapp footer--icon"></span><a href="#">81 99999-9999</a>
+                </div>
+            </div>
+            <div class="footer--div">
+                <div class="footer--link">
+                    <span class="bi bi-twitter footer--icon"></span><a href="#">@gamezone1</a>
+                </div>
+                <div class="footer--link">
+                    <span class="bi bi-facebook footer--icon"></span><a href="#">fb.com/gamezone</a>
+                </div>
+            </div>
+            <div class="footer--div">
+                <div class="footer--link">
+                    <span class="bi bi-telephone-fill footer--icon"></span> <p>81 9999-9999</p>
+                </div>
+                <div class="footer--link">
+                    <span class="bi bi-megaphone-fill footer--icon"></span> <p>81 9999-9999</p>
+                </div>
+            </div>
+        </section>
+        <div id="footer-ref">
+            <span>Desenvolvido por <a href="https://github.com/hfidelis" target="_blank">Heitor Fidelis</a></span>
+        </div>
+    </footer>
+
+    <!-- Bootstrap:source / Local JS:source -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+    <script src="../js/script.js"></script>
+    <!-- JQuery:source / Local JQuery:source -->
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="../js/jquery-script.js"></script>
+</body>
+
+</html>

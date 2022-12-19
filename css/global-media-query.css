@@ -1,0 +1,39 @@
+@charset 'UTF-8';
+
+@media only screen and (min-width: 768px) {
+
+    nav, footer {
+        height: 70px;
+    }
+
+    footer>section {
+        gap: 100px;
+    }
+
+    .footer--icon, .footer--link>a, .footer--link>p {
+        font-size: 1.2em;
+    }
+
+    main {
+        height: calc(100% - 140px);
+    }
+}
+
+@media only screen and (min-width: 992px) {
+
+    nav, footer {
+        height: 90px;
+    }
+
+    footer>section {
+        gap: 200px;
+    }
+
+    .footer--icon, .footer--link>a, .footer--link>p {
+        font-size: 1.5em;
+    }
+
+    main {
+        height: calc(100% - 180px);
+    }
+}
