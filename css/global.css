@@ -7,6 +7,7 @@
     --azul-medium: rgb(0, 133, 250);
     --azul-dark: #003260;
     --azul-darker: #0D022E;
+    --rosa-destaque: rgb(193, 40, 193);
 }
 
 /* GLOBAL */
@@ -33,12 +34,100 @@ main {
 
 /* NAV */
 nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     width: 100vw;
     height: 56px;
     background-color: var(--azul-darker);
     margin-bottom: auto;
+    padding: 0 15px;
     transition: height .3s;
     transition-timing-function: ease;
+}
+
+nav.open>#navigation {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    border-top: 3px solid var(--azul-medium);
+    background-color: var(--azul-darker);
+    top: 56px;
+    left: 0;
+    height: calc(100% - 56px);
+    width: 100%;
+    padding: 10px 0 0 0;
+}
+
+nav.open>#navigation>li {
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    border-bottom: 1px solid var(--rosa-destaque);
+    box-shadow: 0px 10px 20px 8px rgb(0 0 0 / 30%);
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 5px;
+    gap: .8rem;
+}
+
+#logo>img {
+    height: 45px;
+    width: 45px;
+    background-color: var(--branco);
+    border-radius: 50%;
+}
+
+#logo-name {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+#logo-name>p {
+    color: var(--branco);
+    font-family: var(--fonte-nunito);
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: .4em;
+    margin: 0;
+}
+
+#navigation {
+    display: none;
+    gap: 10px;
+    position: relative;
+    margin: 0;
+}
+
+#navigation>li {
+    list-style: none;
+}
+
+#navigation>li>a {
+    text-decoration: none;
+    color: var(--branco);
+    letter-spacing: .2em;
+    font-weight: 700;
+}
+
+#navigation>li>a:hover {
+    color: var(--azul-medium);
+}
+
+#menu-button {
+    display: flex;
+    align-items: center;
+}
+
+#menuToggle {
+    color: var(--branco);
+    font-size: 2em;
 }
 
 /* FOOTER */
@@ -77,7 +166,7 @@ footer>section {
 }
 
 .footer--link>a:hover {
-    color: rgb(193, 40, 193);
+    color: var(--rosa-destaque);
     text-decoration: underline;
 }
 
@@ -109,5 +198,5 @@ footer>section {
 }
 
 #footer-ref>span>a:hover {
-    color: rgb(193, 40, 193);
+    color: var(--rosa-destaque);
 }

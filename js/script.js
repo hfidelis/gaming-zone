@@ -1,9 +1,38 @@
+const menuButton = document.querySelector('#menuToggle');
+const nav = document.querySelector('nav');
+const body = document.querySelector('body');
+
+window.addEventListener('resize', function() {
+
+    const width = body.offsetWidth;
+    if (width >= 992) {
+        nav.classList.remove('open')
+        menuButton.className = 'bi bi-list'
+        menuButton.style.color = 'rgba(255, 255, 255, 0.98)'
+    }
+    
+})
+
+menuButton.onclick = () => {
+    
+    nav.classList.toggle('open');
+
+    if(nav.classList.contains('open') === true) {
+        menuButton.className = 'bi bi-x-lg';
+        menuButton.style.color = '#F63A25';
+    } else {
+        menuButton.className = 'bi bi-list';
+        menuButton.style.color = 'rgba(255, 255, 255, 0.98)'
+    }
+
+}
+
 // Inputs do cadastro
 const form = document.querySelector('#registro-form');
 const regemail = document.querySelector('#email-area');
 const reguser = document.querySelector('#ruser-area');
 const regpass = document.querySelector('#rpass-area');
-const confpass = document.querySelector('#confpass-area')
+const confpass = document.querySelector('#confpass-area');
 
 // Botão de cadastrar
 const regButton = document.querySelector("#regButton");
