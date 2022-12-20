@@ -2,10 +2,11 @@ const menuButton = document.querySelector('#menuToggle');
 const nav = document.querySelector('nav');
 const body = document.querySelector('body');
 
+// Monitorando o tamanho do body para impedir que o usuário fique preso com o menu aberto se a tela aumentar.
 window.addEventListener('resize', function() {
 
-    const width = body.offsetWidth;
-    if (width >= 992) {
+    const bodyWidth = body.offsetWidth;
+    if (bodyWidth >= 992) {
         nav.classList.remove('open')
         menuButton.className = 'bi bi-list'
         menuButton.style.color = 'rgba(255, 255, 255, 0.98)'
@@ -13,6 +14,7 @@ window.addEventListener('resize', function() {
     
 })
 
+// Botão de menu
 menuButton.onclick = () => {
     
     nav.classList.toggle('open');
