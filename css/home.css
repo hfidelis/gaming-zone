@@ -10,8 +10,233 @@
     --rosa-destaque: rgb(193, 40, 193);
 }
 
+body {
+    /* background-image: linear-gradient(45deg, rgb(35, 19, 73), rgb(63, 20, 92));
+    background-size: contain; */
+    background-color: rgb(39, 4, 65);
+}
+
 main {
+    height: auto!important;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 3vh 5vw;
+}
+
+#banner-slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    width: 100%;
+    margin-bottom: 5vh;
+}
+
+#banner-slider img {
+    height: 300px;
+    width: 100%!important;
+}
+
+.carousel-item h5 {
+    font-family: var(--fonte-nunito);
+    font-weight: 900;
+    letter-spacing: .1em;
+    padding: 5px;
+    text-transform: uppercase;
+    backdrop-filter: blur(21px);
+    -webkit-backdrop-filter: blur(21px);
+    border-radius: 24px;
+}
+
+.carousel-item p {
+    font-family: var(--fonte-nunito);
+    padding: 5px;
+    backdrop-filter: blur(21px);
+    -webkit-backdrop-filter: blur(21px);
+    border-radius: 24px;
+}
+
+.section-titulo {
+    color: var(--branco);
+    font-family: var(--fonte-nunito);
+    font-size: 1.5em;
+    letter-spacing: .05em;
+    text-align: center;
+    text-transform: uppercase;
+    background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+    backdrop-filter: blur(21px);
+    -webkit-backdrop-filter: blur(21px);
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    border-radius: 16px;
+    box-shadow: 0 4px 16px 6px rgb(255 255 255 / 70%);
+    padding: 10px;
+    margin-bottom: 3vh;
+    width: 100%;
+}
+
+
+#computer-options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3vh;
+    text-align: center;
+    height: auto;
+    width: 100%;
+    margin: 3vh 0;
+}
+
+#pc-options {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    gap: 3vh;
+    text-align: center;
+}
+
+.pc--option {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3vw;
+    width: 100%;
+    height: 50px;
+    border-radius: 16px;
+    cursor: pointer;
+    box-shadow: 0 0px 6px 6px rgb(0 0 0 / 30%);
+    transition: .3s;
+}
+
+#option-work {
+    background-color: rgb(75, 56, 156);
+}
+
+#option-work:hover {
+    background-color: rgb(46, 35, 99)
+}
+
+#option-home {
+    background-color: rgb(58, 116, 58);
+}
+
+#option-home:hover {
+    background-color: rgb(27, 54, 27)
+}
+
+#option-gaming {
+    background-color: rgb(161, 65, 65);
+}
+
+#option-gaming:hover {
+    background-color: rgb(58, 23, 23);
+}
+
+#option-build {
+    background-color: rgb(165, 144, 28);
+}
+
+#option-build:hover {
+    background-color: rgb(109, 95, 19);
+}
+
+.option-icon {
+    color: var(--branco);
+    font-size: 1.5em;
+}
+
+.option-text {
+    font-family: var(--fonte-nunito);
+    font-weight: 900;
+    letter-spacing: .1em;
+    color: var(--branco);
+    text-transform: uppercase;
+    margin: 0;
+}
+
+#item-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin: 5vh 0;
+}
+
+.card--grupo {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    margin: 3vh 2vw;
+    width: 280px;
+    border-radius: 16px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    text-align: center;
+    box-shadow:
+    0.3px 0.3px 2.5px rgba(0, 0, 0, 0.242),
+    0.6px 0.7px 7px rgba(0, 0, 0, 0.331),
+    1.3px 1.6px 15.6px rgba(0, 0, 0, 0.387),
+    6px 7px 33px rgba(0, 0, 0, 0.4)
+  ;
+}
+
+.card-body {
+    padding: 5px;
+}
+
+.card-body>p {
+    margin-bottom: 5px;
+}
+
+.card>img {
+    height: 260px;
+    width: 100%;
+}
+
+.card-title {
+    font-family: var(--fonte-nunito);
+    font-size: 1.5em;
+    font-weight: 900;
+    letter-spacing: .1em;
+    color: var(--azul-dark);
+}
+
+.card-text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.card-price {
+    color: var(--azul-darker);
+    font-family: var(--fonte-nunito);
+    font-weight: 900;
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.card-price-plus {
+    color: red;
+    font-family: var(--fonte-nunito);
+    font-weight: 700;
+    font-size: 1em;
+}
+
+.card-body>a {
+    font-family: var(--fonte-nunito);
+    font-weight: 900;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    border: none;
+    width: 70%;
+    background-color: var(--rosa-destaque);
 }

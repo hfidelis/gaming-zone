@@ -1,0 +1,45 @@
+@charset 'UTF-8';
+
+@media only screen and (min-width: 768px) {
+
+    #banner-slider {
+        height: 500px;
+    }
+
+    #banner-slider img {
+        height: 500px;
+    }
+
+    .section-titulo {
+        width: 40%;
+    }
+
+    #pc-options {
+        flex-direction: row;
+    }
+
+    .card--grupo {
+        flex-direction: row;
+    }
+
+}
+
+@media only screen and (min-width: 992px) {
+    #banner-slider {
+        height: 700px;
+        max-width: 1190px;
+    }
+
+    #banner-slider img {
+        height: 700px;
+        max-width: 1190px;
+    }
+
+    .card {
+        width: 220px;
+    }
+
+    .card img {
+        height: 220px;
+    }
+}

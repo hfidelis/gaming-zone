@@ -62,7 +62,7 @@ function checkInputs() {
     let validation = 0
     
     if (reguserValue === '') {
-        errorCall(reguser, 'Preencha esse campo')
+        errorCall(reguser, 'Preencha esse campo!')
     } else if (reguserValue.length < 3) {
         errorCall(reguser, 'Seu usuário deve ter no mínimo 3 caracteres!')
     } else {
@@ -71,7 +71,7 @@ function checkInputs() {
     }
 
     if (regemailValue === '') {
-        errorCall(regemail, 'Preencha esse campo')
+        errorCall(regemail, 'Preencha esse campo!')
     } else if (regemailValue.match(emailregex)) {
         successCall(regemail)
         validation += 1
@@ -89,7 +89,7 @@ function checkInputs() {
     }
 
     if (confpassValue === '') {
-        errorCall(confpass, 'Preencha esse campo')
+        errorCall(confpass, 'Preencha esse campo!')
     } else if (confpassValue.length < 8 ){
         errorCall(confpass, 'Sua senha deve ter no mínimo 8 caracateres!')
     } else if(confpassValue != regpassValue) {

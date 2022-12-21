@@ -53,11 +53,13 @@ nav.open>#navigation {
     position: absolute;
     border-top: 3px solid var(--azul-medium);
     background-color: var(--azul-darker);
+    box-shadow: 0px 24px 24px 24px rgb(0 0 0 / 70%);
     top: 56px;
     left: 0;
-    height: calc(100% - 56px);
+    height: auto;
     width: 100%;
     padding: 10px 0 0 0;
+    z-index: 1000;
 }
 
 nav.open>#navigation>li {
@@ -184,6 +186,7 @@ footer>section {
     width: 100%;
     padding: 5px;
     text-align: center;
+    letter-spacing: .1em;
     background-color: #000;
 }
 
