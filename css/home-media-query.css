@@ -26,13 +26,13 @@
 
 @media only screen and (min-width: 992px) {
     #banner-slider {
-        height: 700px;
-        max-width: 1190px;
+        height: 730px;
+        max-width: 1100px;
     }
 
     #banner-slider img {
-        height: 700px;
-        max-width: 1190px;
+        height: 730px;
+        max-width: 1100px;
     }
 
     .card {

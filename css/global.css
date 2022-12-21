@@ -26,7 +26,6 @@ body {
 }
 
 main {
-    height: calc(100% - 121px);
     width: 100vw;
     transition: height .3s;
     transition-timing-function: ea;
@@ -38,7 +37,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     width: 100vw;
-    height: 56px;
+    height: 65px;
     background-color: var(--azul-darker);
     margin-bottom: auto;
     padding: 0 15px;
@@ -54,7 +53,7 @@ nav.open>#navigation {
     border-top: 3px solid var(--azul-medium);
     background-color: var(--azul-darker);
     box-shadow: 0px 24px 24px 24px rgb(0 0 0 / 70%);
-    top: 56px;
+    top: 65px;
     left: 0;
     height: auto;
     width: 100%;
@@ -140,7 +139,7 @@ footer {
     align-items: center;
     font-size: .6em;
     width: 100vw;
-    height: 65px;
+    height: 75px;
     margin-top: auto;
     background-color: var(--azul-darker);
     transition: height .3s;
@@ -154,7 +153,7 @@ footer>section {
     padding-bottom: 5px;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 30px;
 }
 
 .footer--link {

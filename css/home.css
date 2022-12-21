@@ -21,7 +21,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 3vh 5vw;
+    padding: 6vh 5vw;
 }
 
 #banner-slider {
@@ -32,6 +32,7 @@ main {
     height: 300px;
     width: 100%;
     margin-bottom: 5vh;
+    box-shadow: 0px 8px 30px 16px rgb(0 0 0 / 40%);
 }
 
 #banner-slider img {
@@ -183,7 +184,7 @@ main {
     margin: 3vh 2vw;
     width: 280px;
     border-radius: 16px;
-    padding: 10px;
+    padding: 16px;
     background-color: #f0f0f0;
     text-align: center;
     box-shadow:
@@ -209,7 +210,7 @@ main {
 
 .card-title {
     font-family: var(--fonte-nunito);
-    font-size: 1.5em;
+    font-size: 1.3em;
     font-weight: 900;
     letter-spacing: .1em;
     color: var(--azul-dark);
@@ -217,6 +218,7 @@ main {
 
 .card-text {
     font-family: Arial, Helvetica, sans-serif;
+    font-size: .8em;
     font-weight: bold;
     text-transform: uppercase;
 }
@@ -225,7 +227,7 @@ main {
     color: var(--azul-darker);
     font-family: var(--fonte-nunito);
     font-weight: 900;
-    font-size: 1.5em;
+    font-size: 1.1em;
     margin: 0;
 }
 
@@ -243,5 +245,10 @@ main {
     text-transform: uppercase;
     border: none;
     width: 70%;
+    transition: .3s;
     background-color: var(--rosa-destaque);
+}
+
+.card-body>a:hover {
+    background-color: rgb(136, 29, 136);
 }
