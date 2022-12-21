@@ -160,8 +160,8 @@ function logIn() {
     }
 
     if (login === false) {
-        errorCall(loginUser, 'Dados inválidos, tente novamente...')
-        errorCall(loginPass, 'Dados inválidos, tente novamente...')
+        errorCall(loginUser, 'Dados inválidos!')
+        errorCall(loginPass, 'Dados inválidos!')
     }
 
 }
