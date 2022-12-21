@@ -141,3 +141,27 @@ function toggleRegPass() {
 function toggleConfPass() {
     showPass(passArea3, showBtn3)
 }
+
+// Função login protótipo
+
+const loginUser = document.querySelector('#user-area')
+const loginPass = document.querySelector('#password-area')
+
+function logIn() {
+    login = false
+    let usuario = loginUser.value.trim()
+    usuario = usuario.toLowerCase()
+    let senha = loginPass.value.trim()
+    senha = senha.toLowerCase()
+
+    if (usuario === 'admin' && senha === '12345678') {
+        window.location.href = 'home.html'
+        login = true
+    }
+
+    if (login === false) {
+        errorCall(loginUser, 'Dados inválidos, tente novamente...')
+        errorCall(loginPass, 'Dados inválidos, tente novamente...')
+    }
+
+}
