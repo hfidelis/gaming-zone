@@ -58,6 +58,11 @@ main {
     border-radius: 24px;
 }
 
+.carousel-control-prev, .carousel-control-next {
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+}
+
 .section-titulo {
     color: var(--branco);
     font-family: var(--fonte-nunito);
