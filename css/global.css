@@ -40,7 +40,7 @@ nav {
     height: 65px;
     background-color: var(--azul-darker);
     margin-bottom: auto;
-    padding: 0 15px;
+    padding: 30px;
     transition: height .3s;
     transition-timing-function: ease;
 }
