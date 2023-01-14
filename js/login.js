@@ -112,12 +112,12 @@ function backHome() {
     window.location.href = 'signin.html'
 }
 
-passArea1 = document.querySelector('#password-area');
-passArea2 = document.querySelector('#rpass-area');
-passArea3 = document.querySelector('#confpass-area');
-showBtn1 = document.querySelector('#showBtn1');
-showBtn2 = document.querySelector('#showBtn2');
-showBtn3 = document.querySelector('#showBtn3');
+const passArea1 = document.querySelector('#password-area');
+const passArea2 = document.querySelector('#rpass-area');
+const passArea3 = document.querySelector('#confpass-area');
+const showBtn1 = document.querySelector('#showBtn1');
+const showBtn2 = document.querySelector('#showBtn2');
+const showBtn3 = document.querySelector('#showBtn3');
 
 function showPass(input, button) {
 
